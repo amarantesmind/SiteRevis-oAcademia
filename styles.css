@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+img{
+    border-radius: 50px;
+    background-color: lightgray;
+    
+    
+}
+img:hover{
+    background-color: green;
+}
+
+.imagem-menu{
+    background-color: green;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, minmax(30px, auto));
+    
+}
+
+h1 span{
+    color: green;
+}
