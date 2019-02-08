@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color:#00F260;
+    grid-area: header;
+    display: flex;
+}
+
+.banner{
+ grid-area: banner;
+ background: url(banner.png);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ display: flex;
+ height: 505px;
+ padding: 0 300px;
+}
+
+.box-banner{
+    width: 50%;
+    height: 100%;
+}
+
+.box-banner h3{
+    color: white;
+}
+
+.box-banner2 img{
+    background: url(hand.png);
+}
+
+.imagem-menu{
+    background-color: #00F260;
+    padding: 25px;
+    border-radius: 60px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 10px auto auto auto auto auto;
+    grid-template-areas: 
+    "header header header header header header header"
+    "banner banner banner banner banner banner banner"
+    "menu menu menu menu menu menu menu"
+    "cadastro cadastro cadastro cadastro cadastro cadastro cadastro"
+    "social social social social social social social"
+    "footer footer footer footer footer footer footer";
+}
+
+h1{
+    color: white;
+    font-size: 90px;
+    font-family: 'Pacifico', cursive;
+}
+
+h1 span{
+    color:#00F260;
+}
+
+
+/* MAIN */
+main{
+    display: flex;
+    width: 100vw;
+}
+
+#principal p{
+    white-space: normal;
+}
+
+#principal .imagem-menu{
+    border-radius: 30px;
+    background-color: lightgray;
+}
+
+#principal .imagem-menu:hover{
+    background-color:#00F260;
+}
+
+.menu{
+    grid-area: menu;
+    display: flex;
+}
+/* CAD */
+
+.cadastro{
+    grid-area: cadastro;
+    background-color: lightgray;
+}
+
+iframe{
+    justify-items: end;
+}
+
+input{
+    border-color: darkgray;
+    border-radius: 9px;
+}
+
+button{
+    background-color: #00F260;
+    border-radius: 10px;
+    color: white;
+    font-size: 13pt;
+}
+
+/* SOCIAL */
+.social{
+    grid-area: social;
+    text-align: center;
+}
+
+.social img{
+    justify-items: center;
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    background-color: lightgray;
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+footer a{
+    text-align: justify;
+    color: dimgray;
+    text-decoration: none;
+    justify-items: center;
+
+}
+
+footer a:hover{
+    color: #00F260;
+}
