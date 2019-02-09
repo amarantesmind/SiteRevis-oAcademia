@@ -69,7 +69,7 @@ h1 span{
     border-radius: 50%;
     cursor: pointer;
     background-color: rgb(60, 60, 60);
-    opacity: 0.5%;
+    opacity: 0.6%;
 }
 
 .icones-banner img:hover{
@@ -231,15 +231,30 @@ iframe{
 
 .social img{
     justify-items: center;
-    text-align: center;
-    background: none;
 }
 
-.social img:hover{
+.container-overlays{
+    display: flex;
+    justify-content: center;
+}
+.overlay{
+    margin: 2px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    background-color: #00F260;
+}
+
+.overlay img{
+    
+    position: relative;
+    z-index: 1;
+}
+
+.overlay img:hover{
     cursor: pointer;
-    background: #00F260;
     opacity: 0.5;
-    filter: alpha (opacity=50);
 }
 
 
