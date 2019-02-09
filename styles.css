@@ -1,6 +1,8 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+  
+    /* overflow-x: hidden; */
 }
 
 .grid{
@@ -87,7 +89,8 @@ h1 span{
 
 main{
     display: flex;
-    width: 100vw;
+    width: 98vw;
+
 }
 
 .imagem-menu{
@@ -237,6 +240,7 @@ iframe{
     display: flex;
     justify-content: center;
 }
+
 .overlay{
     margin: 2px;
     display: flex;
