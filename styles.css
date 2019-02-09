@@ -3,8 +3,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .grid{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -45,9 +43,14 @@ header{
     height: 100%;
 }
 
+.banner .box1{
+    margin: 50px;
+    padding: 20px;
+}
+
 h1{
     color: white;
-    font-size: 90px;
+    font-size: 60px;
     font-family: 'Pacifico', cursive;
     margin: 0;
 }
@@ -62,16 +65,20 @@ h1 span{
 }
 
 .icones-banner img {
-    padding: 15px;
+    padding: 10px;
     border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(60, 60, 60);
+    opacity: 0.5%;
 }
 
 .icones-banner img:hover{
     background-color: #00F260; 
 }
-   
+
 .box-banner2 img{
-    background: url(hand.png);
+    margin: 85px 90px;
+    height: 420px;
 }
    
 
@@ -85,16 +92,18 @@ main{
 
 .imagem-menu{
     background-color: #00F260;
+    cursor: pointer;
     padding: 20px;
     border-radius: 50%;
 }
 
 .principal section{
-    margin: 50px;
+    margin: 35px;
     position: relative;
-    padding: 5px;
+    padding: 30px;
+    align-content: center;
+    justify-content: center;
 }
-
 
 
 .imagem-menu:hover{
@@ -106,6 +115,40 @@ main{
     display: flex;
 }
 
+.principal p{
+    color: rgb(60, 60, 60);
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+.principal .icone1{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.principal .icone2{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.principal .icone3{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
 /* CAD */
 /*///////////////////////////////////////////////////////////////////*/
 
@@ -115,9 +158,14 @@ main{
     display: flex;
 }
 
+.cadastro p{
+    color: rgb(60, 60, 60);
+}
+
 .cadastro span{
-    width: 40%;
+    width: 38%;
     padding: 3%;
+    margin: 0 80px;
 }
 
 .cadastro div{
@@ -131,8 +179,10 @@ input{
     border: 1px;
     border-color: darkgray;
     border-radius: 15px 0 0 15px;
+    font-size: 12pt;
     height: auto;
     width: 60%;
+    text-align: center;
 }
 
 button{
@@ -140,10 +190,16 @@ button{
     border: 1px;
     border-color: rgb(0, 136, 55);
     color: white;
+    cursor: pointer;
     border-radius: 0 15px 15px 0;
-    font-size: 13pt;
+    font-size: 18pt;
     height: auto;
     width: 40%;
+}
+
+button:hover{
+    background-color: rgb(60, 60, 60);
+    color: #00F260;
 }
 
 iframe{
@@ -156,10 +212,18 @@ iframe{
 
 .citacao{
     width: 70%;
-    margin: 20;
+    margin: 20px 200px;
     display: flex;
-
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
+
+.citacao p{
+    color: darkgray;
+}
+
 .social{
     grid-area: social;
     text-align: center;
@@ -168,8 +232,30 @@ iframe{
 .social img{
     justify-items: center;
     text-align: center;
+    background: none;
 }
 
+.social img:hover{
+    cursor: pointer;
+    background: #00F260;
+    opacity: 0.5;
+    filter: alpha (opacity=50);
+}
+
+
+.icons img{
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: lightgray;
+    opacity: 0.5%;
+    height: 30px;
+    margin: 20px 0;
+}
+
+.icons img:hover{
+    background-color: #00F260; 
+}
 
 /* FOOTER */
 /*///////////////////////////////////////////////////////////////////*/
@@ -177,17 +263,21 @@ iframe{
 footer{
     background-color: lightgray;
     grid-area: footer;
-    height: 300px;
+    height: 100px;
     width: 100%;
     letter-spacing: 3px;
     text-align: center;
 }
 
-footer a{
+footer div{
     color: dimgray;
+    margin: 40px;
+    
+}
+
+footer div a{
     text-decoration: none;
-    justify-items: center;
-    align-items: center;
+    color: rgb(60, 60, 60);
 
 }
 
