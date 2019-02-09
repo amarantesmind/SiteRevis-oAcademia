@@ -3,41 +3,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-header{
-    background-color:#00F260;
-    grid-area: header;
-    display: flex;
-}
 
-.banner{
- grid-area: banner;
- background: url(banner.png);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
- display: flex;
- height: 505px;
- padding: 0 300px;
-}
-
-.box-banner{
-    width: 50%;
-    height: 100%;
-}
-
-.box-banner h3{
-    color: white;
-}
-
-.box-banner2 img{
-    background: url(hand.png);
-}
-
-.imagem-menu{
-    background-color: #00F260;
-    padding: 25px;
-    border-radius: 60px;
-}
 
 .grid{
     display: grid;
@@ -52,64 +18,148 @@ header{
     "footer footer footer footer footer footer footer";
 }
 
+/* HEADER */
+
+header{
+    background-color:#00F260;
+    grid-area: header;
+    display: flex;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+/* BANNER */
+
+.banner{
+    grid-area: banner;
+    background: url(banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 505px;
+    padding: 0 230px;
+   }
+   
+.box-banner{
+    width: 50%;
+    height: 100%;
+}
+
 h1{
     color: white;
     font-size: 90px;
     font-family: 'Pacifico', cursive;
+    margin: 0;
 }
 
 h1 span{
     color:#00F260;
+    margin: 0;
 }
 
+.box-banner h3{
+    color: white;
+}
+
+.icones-banner img {
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.icones-banner img:hover{
+    background-color: #00F260; 
+}
+   
+.box-banner2 img{
+    background: url(hand.png);
+}
+   
 
 /* MAIN */
+/*/////////////////////////////////////////////////////////////////*/
+
 main{
     display: flex;
     width: 100vw;
 }
 
-#principal p{
-    white-space: normal;
+.imagem-menu{
+    background-color: #00F260;
+    padding: 20px;
+    border-radius: 50%;
 }
 
-#principal .imagem-menu{
-    border-radius: 30px;
+.principal section{
+    margin: 50px;
+    position: relative;
+    padding: 5px;
+}
+
+
+
+.imagem-menu:hover{
     background-color: lightgray;
-}
-
-#principal .imagem-menu:hover{
-    background-color:#00F260;
 }
 
 .menu{
     grid-area: menu;
     display: flex;
 }
+
 /* CAD */
+/*///////////////////////////////////////////////////////////////////*/
 
 .cadastro{
-    grid-area: cadastro;
     background-color: lightgray;
+    grid-area: cadastro;
+    display: flex;
+}
+
+.cadastro span{
+    width: 40%;
+    padding: 3%;
+}
+
+.cadastro div{
+    display: flex;
+    margin: 0;
+    height: 55px;
+    width: 500px;
+}
+
+input{
+    border: 1px;
+    border-color: darkgray;
+    border-radius: 15px 0 0 15px;
+    height: auto;
+    width: 60%;
+}
+
+button{
+    background-color: #00F260;
+    border: 1px;
+    border-color: rgb(0, 136, 55);
+    color: white;
+    border-radius: 0 15px 15px 0;
+    font-size: 13pt;
+    height: auto;
+    width: 40%;
 }
 
 iframe{
     justify-items: end;
 }
 
-input{
-    border-color: darkgray;
-    border-radius: 9px;
-}
-
-button{
-    background-color: #00F260;
-    border-radius: 10px;
-    color: white;
-    font-size: 13pt;
-}
 
 /* SOCIAL */
+/*///////////////////////////////////////////////////////////////////*/
+
+.citacao{
+    width: 70%;
+    margin: 20;
+    display: flex;
+
+}
 .social{
     grid-area: social;
     text-align: center;
@@ -120,21 +170,24 @@ button{
     text-align: center;
 }
 
+
 /* FOOTER */
+/*///////////////////////////////////////////////////////////////////*/
+
 footer{
     background-color: lightgray;
     grid-area: footer;
-    height: 100%;
+    height: 300px;
     width: 100%;
     letter-spacing: 3px;
     text-align: center;
 }
 
 footer a{
-    text-align: justify;
     color: dimgray;
     text-decoration: none;
     justify-items: center;
+    align-items: center;
 
 }
 
