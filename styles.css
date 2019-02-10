@@ -46,7 +46,7 @@ header{
     height: 100%;
 }
 
-.banner .box1{
+.box1{
     margin: 50px;
     padding: 20px;
 }
@@ -225,17 +225,18 @@ iframe{
 /* SOCIAL */
 /*///////////////////////////////////////////////////////////////////*/
 
+.citacao-box{
+    width: 80%;
+    padding: 0;
+    margin: 0 10%;
+}
+
 .citacao{
-    width: 70%;
-    margin: 20px 200px;
     display: flex;
     text-align: center;
     justify-items: center;
     align-content: center;
     align-items: center;
-}
-
-.citacao p{
     color: darkgray;
 }
 
@@ -319,7 +320,8 @@ footer a:hover{
 /* MEDIA QUERY */
 /* ///////////////////////////////////////////////////////////////// */
 
-@media(max-width:992px){
+
+@media(max-width:1138px){
 
     .box-banner2{
         display: none;
@@ -359,4 +361,22 @@ footer a:hover{
     .overlay{
         display: inline-grid;
     }
+}
+
+@media(max-width:799px){
+   
+
+    .box-banner{
+        padding: 0;
+
+    }
+    .box1{
+        margin: 30% 10% 10% -50%;
+        padding: 0;
+    }
+}
+
+@media(max-width:608px){
+
+    
 }
