@@ -19,6 +19,7 @@ body{
 }
 
 /* HEADER */
+/* ////////////////////////////////////////////////////////////// */
 
 header{
     background-color:#00F260;
@@ -103,7 +104,7 @@ main{
 .principal section{
     margin: 35px;
     position: relative;
-    padding: 30px;
+    padding: 15px;
     align-content: center;
     justify-content: center;
 }
@@ -302,4 +303,18 @@ footer div a{
 
 footer a:hover{
     color: #00F260;
+}
+
+/* MEDIA QUERY */
+/* ///////////////////////////////////////////////////////////////// */
+
+@media(max-width:992px){
+    main{
+        flex-direction: column;
+    }
+
+    .cadastro{
+        flex-direction: column;
+    }
+
 }
