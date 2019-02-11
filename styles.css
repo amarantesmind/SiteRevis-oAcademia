@@ -376,7 +376,94 @@ footer a:hover{
     }
 }
 
-@media(max-width:608px){
+@media(max-width:425px){
 
-    
+    .box-banner{
+        padding: 0;
+
+    }
+    .box1{
+        margin: 30% 10% 10% -50%;
+        padding: 0;
+    }
+
+    .banner{
+        width: 50%;
+    }
+
+    .cadastro{
+        width: 158%;
+        height: 100%;
+    }
+
+    header{
+        width: 158%;
+    }
+
+    .principal{
+        width: 158%;
+        align-content: center;
+        margin: 70px;
+    }
+
+    input{
+        width: 30%;
+    }
+
+    button{
+        width: 30%;
+    }
+
+    iframe{
+        padding: 10px;
+        margin: 0 50px;
+    }
+
+    .social{
+        width: 158%;
+    }
+
+    footer{
+        width: 158%;
+    }
+
+}
+
+@media(max-width:375px){
+    header{
+        width: 173%;
+    }
+
+    .cadastro{
+        width: 173%;
+    }
+
+    .social{
+        width: 173%;
+    }
+
+    footer{
+        width: 173%;
+    }
+
+}
+
+@media(max-width:320px){
+
+    header{
+        width: 179%;
+    }
+
+    .cadastro{
+        width: 179%;
+    }
+
+    .social{
+        width: 179%;
+    }
+
+    footer{
+        width: 179%;
+    }
+
 }
